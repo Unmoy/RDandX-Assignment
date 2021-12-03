@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ExchangeCurrency from "./Components/ExchangeCurrency/ExchangeCurrency";
+import Map from "./Components/Map/Map";
+
+import Weather from "./Components/Weather/Weather";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="row">
+        <div className="col-md-6 p-5">
+          <Weather />
+        </div>
+        <div className="col-md-6">
+          <Map></Map>
+          <ExchangeCurrency></ExchangeCurrency>
+        </div>
+      </div>
     </div>
   );
 }

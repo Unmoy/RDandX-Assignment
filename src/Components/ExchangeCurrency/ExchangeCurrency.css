@@ -1,0 +1,13 @@
+.table_wrapper {
+  font-family: "Poppins";
+}
+
+.table_wrapper table,
+th,
+tr,
+td {
+  border: 1px solid #000;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 50px;
+}
